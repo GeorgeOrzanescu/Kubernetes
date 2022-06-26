@@ -1,4 +1,3 @@
-
 # ReplicaSet DEFINITION FILE .yml .yaml
 
 apiVersion: apps/v1
@@ -7,9 +6,9 @@ kind: ReplicaSet
 
 metadata:
 
-  name: frontend
+name: frontend
 
-  labels:
+labels:
 
     app: guestbook
 
@@ -17,21 +16,25 @@ metadata:
 
 spec:
 
-  # modify replicas according to your case
+# modify replicas according to your case
 
-  replicas: 3
+replicas: 3
 
-  selector:
+selector:
 
     matchLabels:
 
+# selects pods with the same label
+
       tier: frontend
 
-  template:
+template:
 
     metadata:
 
       labels:
+
+# these labels will be applied to the pods created by the ReplicaSet
 
         tier: frontend
 
@@ -42,5 +45,3 @@ spec:
       - name: php-redis
 
         image: gcr.io/google_samples/gb-frontend:v3
-
-
