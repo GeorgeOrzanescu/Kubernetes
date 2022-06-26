@@ -1,0 +1,10 @@
+kubectl create -f replicaset-definition.yml --> create replicaset from yaml file
+
+kubectl get replicaset --all --> get all replicaset
+
+kubectl describe replicasets new-replica-set  --> get detailed view of a replica set
+
+kubectl delete replicasets replicaset-1 --> deletes a replica set
+
+#IMPERATIVE COMMAND
+kubectl scale replicaset --replicas=5 new-replica-set  --> scale to 5 pods without editing the yaml file
