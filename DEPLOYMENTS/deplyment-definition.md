@@ -1,3 +1,8 @@
+
+![image](https://user-images.githubusercontent.com/65309085/175805437-48f13148-8090-408e-9942-c1b6fc116e84.png)
+
+
+
 # DEPLOYMENT DEFINITION FILE .yml .yaml
 
 apiVersion: apps/v1
