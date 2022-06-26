@@ -7,7 +7,7 @@ kind: Pod
 
 metadata:
 
-  name: nginx
+&ensp;name: nginx
 
 spec:
 
