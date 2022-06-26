@@ -1,0 +1,15 @@
+kubectl get pods   --> see all pods in default namespace
+
+kubectl get pods --all-namespaces --> see all pods in all namespaces
+
+kubectl run nginx --image=nginx --> create a pod with nginx image
+
+kubectl get pods -o wide -- > see all pods in more detail
+
+kubectl describe pod webapp --> see details of a pod
+
+kubectl delete pod webapp --> deletes a pod
+
+kubectl run redis --image=redis123  --dry-run=client -o yaml > pod.yaml --> it will create a yaml file
+
+kubectl apply -f pod.yaml --> creates the pod based on the yaml configuration
