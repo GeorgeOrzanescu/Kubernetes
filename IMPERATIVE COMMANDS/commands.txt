@@ -1,0 +1,19 @@
+kubectl run nginx-pod --image=nginx:alpine  --> creates pod named nginx-pod from image
+
+kubectl run redis --image=redis:alpine --labels=tier=db --> creates pod named redis from image and labels it as tier=db
+
+kubectl expose pod redis --name redis-service --port 6379 --target-port 6379 --> creates service named redis-service exposing port 6379 of pod redis
+
+kubectl describe svc redis-service --> to see the service
+
+kubectl create deployment webapp --image=kodekloud/webapp-color --replicas=3 --> creates deployment named webapp with 3 replicas of image kodekloud/webapp-color
+
+kubectl create namespace dev-ns --> creates namespace dev-ns
+
+kubectl create deployment redis-deploy --image=redis --replicas=2 --namespace=dev-ns --> creates deployment named redis-deploy with 2 replicas of image redis and in namespace dev-ns
+
+kubectl get deployments.apps --namespace=dev-ns  --> to see deployments in namespace dev-ns
+
+kubectl run httpd --image=httpd:alpine --port=80 --expose --dry-run=client -o yaml > redis.yaml --> creates pod named httpd from image and port 80 and exposes it also creates yaml
+
+kubectl create -f redis.yaml  --> creates pod from yaml
