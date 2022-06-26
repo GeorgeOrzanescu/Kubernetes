@@ -1,0 +1,9 @@
+kubectl create deployment httpd-frontend --image=httpd:2.4-alpine  --> Deployment using image from DockerHub
+
+kubectl scale deployment --replicas=3 httpd-frontend  --> Scale the deployment to 3 replicas
+
+kubectl set image deployment/nginx-deployment nginx=nginx:1.16.1 --> Update the image of the deployment
+
+kubectl describe deployments httpd-frontend --> Describe the deployment
+
+kubectl apply -f mydeployment.yaml --> Apply the deployment from a file
