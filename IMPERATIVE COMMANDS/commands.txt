@@ -17,3 +17,5 @@ kubectl get deployments.apps --namespace=dev-ns  --> to see deployments in names
 kubectl run httpd --image=httpd:alpine --port=80 --expose --dry-run=client -o yaml > redis.yaml --> creates pod named httpd from image and port 80 and exposes it also creates yaml
 
 kubectl create -f redis.yaml  --> creates pod from yaml
+
+kubectl get pod webapp-color -o yaml > pod.yaml --> creates yaml file of pod webapp-color

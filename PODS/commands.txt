@@ -13,3 +13,5 @@ kubectl delete pod webapp --> deletes a pod
 kubectl run redis --image=redis123  --dry-run=client -o yaml > pod.yaml --> it will create a yaml file
 
 kubectl apply -f pod.yaml --> creates the pod based on the yaml configuration
+
+kubectl get pod webapp-color -o yaml > pod.yaml --> it will create a yaml file with the pod configuration

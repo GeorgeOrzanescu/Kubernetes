@@ -1,0 +1,18 @@
+#configMaps holds data used in settings and configuration
+
+kubectl get configmap   --> see the configMaps created 
+
+kubectl describe configmaps db-config  --> see the variable stored inside and other details
+
+kubectl create configmap \
+> webapp-config-map --from-literal=APP_COLOR=darkblue
+
+
+
+# Secrets hold sensitive data used in settings and configuration
+
+kubectl create secret generic \
+> db-secret --from-literal=DB_Host=sql01 \
+> --from-literal=DB_User=root \
+> --from literal=DB_Password=password123
+
