@@ -7,3 +7,11 @@ kubectl set image deployment/nginx-deployment nginx=nginx:1.16.1 --> Update the 
 kubectl describe deployments httpd-frontend --> Describe the deployment
 
 kubectl apply -f mydeployment.yaml --> Apply the deployment from a file
+
+
+
+# UPDATES AND ROLLBACKS
+
+kubectl set image deployment/frontend simple-webapp=kodekloud/webapp-color:v2
+// Update the image of the deployment frontend with container name simple-webapp
+
