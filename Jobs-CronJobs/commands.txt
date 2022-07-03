@@ -1,0 +1,19 @@
+kubectl get jobs --> list all jobs
+
+kubectl logs <job-name> --> get logs of a job
+
+kubectl delete <job-name> --> delete a job
+
+kubectl get jobs throw-dice-job -w --> watch a job
+!!   also --watch is used to watch a job
+
+# u can add these options in the job definition file
+spec:
+  backoffLimit: 4 --> number of times to retry a job
+  completions: 3 --> number of times to run a job
+
+
+kubectl create cronjob throw-dice-cron-job --image=kodekloud/throw-dice --schedule "30 21 * * *" --dry-run=client -o yaml > cronJob.yaml
+--> create a cron job that runs a job every day at 21:30
+
+kubectl describe cronjobs.batch throw-dice-cron-job --> get details of a cron job
