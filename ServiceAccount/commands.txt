@@ -1,0 +1,12 @@
+# Service Accounts are used by apps to access other APIs.
+
+
+kubectl create serviceaccount dashboard-sa --> creates a service account called dashboard-sa
+
+kubectl get serviceaccount --> shows all  the service account created
+
+kubectl describe serviceaccount dashboard-sa --> shows the details of the service account
+
+#! token is what is used for authentication IT IS STORED AS A SECRET
+
+kubectl describe secret <name of secret> --> shows the details of the secret

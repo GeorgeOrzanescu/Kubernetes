@@ -1,0 +1,14 @@
+
+kubectl taint nodes node1 key1=value1:NoSchedule --> taint node1 with key1=value1:NoSchedule
+
+#! This means that no pod will be able to schedule onto node1 unless it has a matching toleration.
+
+kubectl taint nodes node1 key1=value1:NoSchedule- --> removes taint added by command above
+
+# Specify the toleration for a pod in the PodSpec
+
+tolerations:
+- key: "key1"
+  operator: "Equal"
+  value: "value1"
+  effect: "NoSchedule"
