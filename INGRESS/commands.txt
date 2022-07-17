@@ -1,0 +1,9 @@
+kubectl get ingress --all-namespaces -> list all ingress
+
+kubectl describe ingress <ingress-name> -> describe ingress
+
+kubectl -n <namespace> get ingress <ingress-name> -> get ingress in namespace
+
+kubectl -n <namespace> get ingress <ingress-name> -o yaml > ingress.yaml --> get ingress in namespace and save it to ingress.yaml
+
+kubectl -n <namespace> delete ingress  <ingress-name> --> delete ingress in namespace

@@ -1,0 +1,7 @@
+kubectl get netpol --> get the network policy's name
+
+kubectl describe netpol <name-of-policy> --> get the network policy's description
+
+kubectl create -f internal-policy.yaml --> create a network policy based on a yaml file
+
+kubectl describe networkpolicies.networking.k8s.io internal-policy      to ckeck the specs

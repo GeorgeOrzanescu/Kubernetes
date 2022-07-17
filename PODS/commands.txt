@@ -25,3 +25,13 @@ kubectl exec -it <name of pod> ls --> run command ls inside the container
 # Logs
 
 kubectl logs <name of pod>  --> see logs of a pod
+kubectl logs -f <name of pod>  --> see logs of a pod in real time
+kubectl logs -f <name of pod>  <name of container> --> see logs of a container in real time
+
+
+# sh into a pod
+kubectl exec --stdin --tty <name of pod>-- /bin/sh
+
+!!! use with caution !!! --> install curl in a pod MUST BE INSIDE THE CONTAINER
+
+apk add --no-cache curl --> install curl in a pod
