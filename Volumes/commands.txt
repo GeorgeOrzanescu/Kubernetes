@@ -1,0 +1,5 @@
+kubectl get pvc --> list all persistent volume claims
+kubectl get pv --> list all persistent volumes
+kubectl get pv --all-namespaces --> list all persistent volumes in all namespaces
+
+kubect get pv,pvc --> list all persistent volumes and persistent volume claims

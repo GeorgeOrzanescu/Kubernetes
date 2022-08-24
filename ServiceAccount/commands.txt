@@ -10,3 +10,5 @@ kubectl describe serviceaccount dashboard-sa --> shows the details of the servic
 #! token is what is used for authentication IT IS STORED AS A SECRET
 
 kubectl describe secret <name of secret> --> shows the details of the secret
+
+kubectl create serviceaccount <name of serviceaccount> -n <name of namespace> --> creates a service account in the namespace

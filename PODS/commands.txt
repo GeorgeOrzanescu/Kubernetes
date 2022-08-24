@@ -21,13 +21,13 @@ kubectl get pod webapp-color -o yaml > pod.yaml --> it will create a yaml file w
 https://kubernetes.io/docs/tasks/debug/debug-application/get-shell-running-container/
 
 kubectl exec -it <name of pod> ls --> run command ls inside the container
+kubectl exec <name of pod> -- cat <path-file> --> run command cat inside the container
 
 # Logs
 
 kubectl logs <name of pod>  --> see logs of a pod
 kubectl logs -f <name of pod>  --> see logs of a pod in real time
 kubectl logs -f <name of pod>  <name of container> --> see logs of a container in real time
-
 
 # sh into a pod
 kubectl exec --stdin --tty <name of pod>-- /bin/sh

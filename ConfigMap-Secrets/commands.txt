@@ -7,7 +7,7 @@ kubectl describe configmaps db-config  --> see the variable stored inside and ot
 kubectl create configmap \
 > webapp-config-map --from-literal=APP_COLOR=darkblue
 
-
+kubectl create configmap <name-of-configmap> --namespace=<name of namespace> --> create a configmap in a namespace
 
 # Secrets hold sensitive data used in settings and configuration
 
