@@ -1,0 +1,3 @@
+k expose deployment <name> --port=6379 --name <name-of-service> -n <namespace> --> create a service thats exposes a deployment
+
+k expose deployment <name> --port=6379 --type=ClusterIP  --name <name-of-service> 
