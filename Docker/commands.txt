@@ -1,0 +1,9 @@
+docker images --> get all images available
+
+docker build -t <image-name-your-choosing> . --> builds an image from a Dockerfile
+!! u have to be inside the folder which contains the image file 
+
+docker container run -p <host-port>:<image port> <image-name> --> run a container based on an image
+
+docker pull <image-name> --> download docker image locally for docker DockerHub
+

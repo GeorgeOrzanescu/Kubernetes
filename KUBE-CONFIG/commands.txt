@@ -1,0 +1,1 @@
+kubectl view config --> see the default kube config file

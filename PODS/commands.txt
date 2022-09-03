@@ -16,6 +16,7 @@ kubectl apply -f pod.yaml --> creates the pod based on the yaml configuration
 
 kubectl get pod webapp-color -o yaml > pod.yaml --> it will create a yaml file with the pod configuration
 
+k explain pods --recursive | less --> get help on properties of certain fields
 
 # Running commands inside a pod/container
 https://kubernetes.io/docs/tasks/debug/debug-application/get-shell-running-container/
