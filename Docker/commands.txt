@@ -7,3 +7,4 @@ docker container run -p <host-port>:<image port> <image-name> --> run a containe
 
 docker pull <image-name> --> download docker image locally for docker DockerHub
 
+ docker tag <name-image>:latest <name-docker-hub-user>/<name-image>:latest 
